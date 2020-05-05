@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earn My Cab</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/bubbles/50/000000/car.png" type="image/x-icon">
+    <!-- My Css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Fullpage Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark black fixed-top z-depth-0">
+        <div class="container-fluid">
+            <a class="navbar-brand font-weight-normal" href="#section1"><i class="fas fa-car text-warning mr-1"></i><i
+                    class="fas fa-dollar-sign text-warning mr-2"></i>Earn My Cab</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto text-right">
+                    <li class="nav-item mr-2 my-auto">
+                        <a class="nav-link" href="#section1">Home</a>
+                    </li>
+                    <li class="nav-item mx-2 my-auto">
+                        <a class="nav-link" href="#section2">My Earning</a>
+                    </li>
+                    <li class="nav-item mx-2 my-auto">
+                        <a class="nav-link" href="#section3">About Us</a>
+                    </li>
+
+                    <li class="nav-item mx-2 my-auto">
+                        <a class="nav-link" href="#section4">Register</a>
+                    </li>
+                    <li class="nav-item ml-2 my-auto">
+                        <a class="nav-link">
+                            <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" class="rounded-circle my_border z-depth-0" height="30" alt="avatar image">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="fullpage">
+        <div class="section" id="section_1">
+            <div class="my_container mx-auto">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <p class="display-4 m-0 font-weight-bold white-text">Are You <span class="text-success display-3">Driving</span> &</p>
+                        <p class="display-4 mb-5 font-weight-bold white-text">Seeking For&nbsp;<span class="text-warning display-2">Money</span></p>
+                        <h4 class="h4-responsive white-text text-capitalize">Check your earnings here</h4>
+                        <a href="#section2"><button
+                                class="btn peach-gradient rounded-pill waves-effect mt-4 my_btn letter-space font-weight-bold m-0">My
+                                Earning<i class="fas fa-long-arrow-alt-right"></i></button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section black">
+            <div class="my_container mx-auto" id="earnings">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <img src="./assets/images/mobile_earn.svg" alt="" srcset="" class="img-fluid ml-0">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <p class="display-4 font-weight-bold lead white-text text-center mb-5"><i class="fas fa-dollar-sign text-success mr-2"></i>My Earnings</p>
+                        <form action="" method="post" class="was-validated">
+                            <div class="row w-75 mx-auto">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="md-form">
+                                        <input type="text" name="full_name" id="full_name" class="form-control white-text" required>
+                                        <label for="full_name" class="font-weight-normal text-warning"><i
+                                                class="fas fa-user mr-2"></i>Full Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="md-form">
+                                        <input type="number" name="drive_hourse" id="drive_hours" class="form-control white-text" pattern="[0-9]{3}" required min="5" max="999">
+                                        <label for="drive_hours" class="font-weight-normal text-warning"><i
+                                                class="fas fa-clock mr-2"></i>Drive Hours</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn purple-gradient m-0 rounded-pill mt-5 font-weight-bold letter-space my_btn" onclick="calc();">Calculate
+                                        Total Amount<i class="fas fa-chevron-circle-right"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section black">
+            <section class="px-md-5 mx-md-5 dark-grey-text text-center">
+                <div class="container my-5 py-5 z-depth-1">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="row">
+                                <div class="col-md-3 col-6 mb-4">
+                                    <i class="fas fa-dollar-sign fa-3x blue-text"></i>
+                                </div>
+                                <div class="col-md-3 col-6 mb-4">
+                                    <i class="fas fa-chart-area fa-3x teal-text"></i>
+                                </div>
+                                <div class="col-md-3 col-6 mb-4">
+                                    <i class="fas fa-cogs fa-3x indigo-text"></i>
+                                </div>
+                                <div class="col-md-3 col-6 mb-4">
+                                    <i class="fas fa-taxi fa-3x deep-purple-text"></i>
+                                </div>
+                            </div>
+                            <h3 class="font-weight-bold text-center white-text pb-2 mb-4">About Us</h3>
+                            <h4 class="mb-5 white-text text-center">We ignite opportunity by setting the world in motion </h4>
+                            <p class="white-text text-center font-weight-normal">Good things happen when people can move, whether across town or toward their dreams. Opportunities appear, open up, become reality. What started as a way to tap a button to get a ride has led to billions of moments of human
+                                connection as people around the world go all kinds of places in all kinds of ways with the help of our technology.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="py-5" id="price">
+                <div class="container my-5">
+                    <h3 class="font-weight-bold text-center white-text pb-2 mb-4">Our pricing plans</h3>
+                    <p class="mb-5 white-text text-center">We offer best of our services and we pay equallyand in the most unbiased fashion. Got your issues get checked here!</p>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 mb-4">
+                            <div class="card card-image" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/pricing-table%20(6).jpg');">
+                                <div class="text-white text-center pricing-card d-flex align-items-center rgba-stylish-strong py-3 px-3 rounded">
+                                    <div class="card-body">
+                                        <h5>Basic</h5>
+                                        <ul class="striped mb-0">
+                                            <li>
+                                                <p><strong>10$/hr</strong> price</p>
+                                            </li>
+                                            <li>
+                                                <p><strong>atleast 20/day</strong> passengers served</p>
+                                            </li>
+                                            <li>
+                                                <p><strong>1</strong>non-sedan car</p>
+                                            </li>
+                                            <li>
+                                                <p><strong>1</strong>music service</p>
+                                            </li>
+                                            <li>
+                                                <p><strong>5</strong>service coupons</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card card-image" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/pricing-table%20(6).jpg');">
+                                <div class="text-white text-center pricing-card d-flex align-items-center rgba-teal-strong py-3 px-3 rounded">
+                                    <div class="card-body">
+                                        <h5>Pro</h5>
+                                        <ul class="striped mb-0">
+                                            <li>
+                                                <p><strong>20$/hr</strong> price</p>
+                                            </li>
+                                            <li>
+                                                <p><strong>atleast 30/day</strong> passengers served</p>
+                                            </li>
+                                            <li>
+                                                <p><strong>1</strong>sedan car</p>
+                                            </li>
+                                            <li>
+                                                <p><strong>1</strong>music service</p>
+                                            </li>
+                                            <li>
+                                                <p><strong>7</strong>service coupons</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card card-image" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/pricing-table%20(6).jpg');">
+                                <div class="text-white text-center pricing-card d-flex align-items-center rgba-stylish-strong py-3 px-3 rounded">
+                                    <div class="card-body">
+                                        <h5>Premium</h5>
+                                        <ul class="striped mb-0">
+                                            <li>
+                                                <p><strong>50$/hr</strong> price</p>
+                                            </li>
+                                            <li>
+                                                <p><strong>atleast 40/day</strong> passengers served</p>
+                                            </li>
+                                            <li>
+                                                <p><strong>1</strong>Luxury car</p>
+                                            </li>
+                                            <li>
+                                                <p><strong>1</strong>premium music service</p>
+                                            </li>
+                                            <li>
+                                                <p><strong>10</strong>service coupons</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="section black">
+            <div class="my_container mx-auto">
+                <p class="display-4 mb-5 text-center white-text">Register Us</p>
+                <hr class="w-50 mb-5">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" class="border-0 w-100 h-100 rounded-lg z-depth-2" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="md-form">
+                                    <input type="email" id="form-email" class="form-control white-text" required>
+                                    <label for="form-email" class="font-weight-normal text-warning">Name</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="md-form">
+                                    <input type="text" id="form-subject" class="form-control white-text" required>
+                                    <label for="form-subject" class="font-weight-normal text-warning">Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="md-form">
+                                    <textarea id="form-message" class="md-textarea form-control white-text" rows="2" required></textarea>
+                                    <label for="form-message" class="font-weight-normal text-warning">Contact no.</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn blue-gradient m-0 rounded-pill mt-5 font-weight-bold letter-space my_btn">Register<i class="far fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <footer class="page-footer font-small grey darken-4 py-2 white-text fixed-bottom">
+            <div class="my_container mx-auto">
+                <div class="row">
+                    <div class="col-md-6 my-auto d-flex mb-2 mb-md-0 justify-content-center">
+                        <ul class="list-unstyled d-flex mb-0">
+                            <li>
+                                <a class="mr-3" role="button"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a class="mr-3" role="button"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a class="mr-3" role="button"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a class="" role="button"><i class="fab fa-youtube"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 my-auto">
+                        <div class="text-center">© 2020.
+                            <a class="text-warning">Made By Anukriti Pudmja</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/js/mdb.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.extensions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.js"></script>
+    <script>
+        new fullpage('#fullpage', {
+            autoScrolling: true,
+            showActiveTooltip: true,
+            anchors: ['section1', 'section2', 'section3', 'section4'],
+            navigationTooltips: ['Home', 'About Us', 'Contact', 'Pricing'],
+            controlArrows: false,
+            slidesNavigation: false,
+        })
+    </script>
+    <script type="text/javascript">
+        $(function() {
+            $('#From').datetimepicker();
+            $('#To').datetimepicker({
+                useCurrent: false
+            });
+            $("#From").on("dp.change", function(e) {
+                $('#To').data("DateTimePicker").minDate(e.date);
+            });
+            $("#To").on("dp.change", function(e) {
+                $('#From').data("DateTimePicker").maxDate(e.date);
+            });
+        });
+    </script>
+    <script>
+        function calc() {
+            var str = document.getElementById("drive_hours").value;
+            drive_hours * 10;
+            alert("The amount is based on the basic package that we offer for the beginners.The total money earned will be(in USD): " + 10 * +str);
+        }
+    </script>
+</body>
+
+</html>

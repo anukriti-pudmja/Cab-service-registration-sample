@@ -1,0 +1,63 @@
+.letter-space {
+    letter-spacing: 1px;
+}
+
+.my_container {
+    width: 80% !important;
+}
+
+.my_border {
+    border: 2px solid #fa3;
+}
+
+.my_btn i {
+    margin-left: 1rem;
+    transition: 0.4s;
+}
+
+.my_btn:hover i {
+    margin-left: 1.4rem;
+    transition: 0.4s;
+}
+
+.navbar ul li {
+    border-bottom: 2px solid #000;
+}
+
+.navbar ul li:hover {
+    border-bottom: 2px solid #fa3;
+}
+
+.md-form input:not([type]), .md-form input[type="text"]:not(.browser-default), .md-form input[type="password"]:not(.browser-default), .md-form input[type="email"]:not(.browser-default), .md-form input[type="url"]:not(.browser-default), .md-form input[type="time"]:not(.browser-default), .md-form input[type="date"]:not(.browser-default), .md-form input[type="datetime"]:not(.browser-default), .md-form input[type="datetime-local"]:not(.browser-default), .md-form input[type="tel"]:not(.browser-default), .md-form input[type="number"]:not(.browser-default), .md-form input[type="search"]:not(.browser-default), .md-form input[type="phone"]:not(.browser-default), .md-form input[type="search-md"], .md-form textarea.md-textarea {
+    border-bottom: 2px solid #fb3 !important;
+    box-shadow: none !important;
+}
+
+#earnings img {
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
+}
+
+/* Section Backgrounds */
+
+#section_1 {
+    background: url(../images/car_home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Responsive */
+
+@media(max-width: 768px) {
+    .display-4 {
+        font-size: 2.2rem !important;
+    }
+    .display-3 {
+        font-size: 3.2rem !important;
+    }
+    .display-2 {
+        font-size: 3.8rem !important;
+    }
+    .display-1 {
+        font-size: 4.4rem !important;
+    }
+}
